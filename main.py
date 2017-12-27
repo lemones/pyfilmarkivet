@@ -11,8 +11,6 @@ if len(sys.argv) < 2:
     print("Accepted arguments: all, url, old, get [URL]")
     exit()
 
-SOUP = "false"
-
 U = 'http://www.filmarkivet.se/filmer-a-o/'
 SRC = urlopen(U)
 SOUP = BeautifulSoup(SRC, "html5lib")
